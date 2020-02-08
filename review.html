@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review CSS</title>
+
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: #474646;
+    }
+
+    table, td {
+        border: 1px solid #fff;
+        color: #474646;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    tr {
+        background-color: #efd3cf;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 5px;
+        color: #474646;
+    }
+
+    td:hover {
+        background-color: #e6e6ef;
+        transition: 1.5s;
+    }
+
+    </style>
+
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Review CSS</h1>
+
+        <table align="center">
+            <tr>
+                <td rowspan="4"><h3><strong>CSS Syntax</h3></strong></td>
+                <td>1. Selector</td>
+                <td>ตำแหน่งที่เลือกว่าจะกำหนดลักษณะต่างๆ</td>
+            </tr>
+
+            <tr>
+                <td>2. Declaration</td>
+                <td>การประกาศลักษณะ</td>
+            </tr>
+
+            <tr>
+                <td>2.1 Property</td>
+                <td>คุณสมบัติ </td>
+            </tr>
+        
+            <tr>
+                <td>2.2 Value</td>
+                <td>ค่าที่กำหนด</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><h3><strong>รูปแบบการเขียน</strong></h3></td>
+                <td>1. Inline CSS</td>
+                <td>เขียนภายใน tag HTML</td>
+            </tr>
+
+            <tr>
+                <td>2. Internal CSS</td>
+                <td>เขียนภายใน Element HTML</td>
+            </tr>
+
+            <tr>
+                <td>3. External CSS</td>
+                <td>นำเข้าไฟล์ CSS จากภายนอก</td>
+            </tr>
+
+            <tr>
+                <td rowspan="6"><h3><strong>Selector</strong></h3></td>
+                <td>1. ID</td>
+                <td>ชื่อของ element โดยจะมีได้แค่ element เดียวเท่านั้น</td>
+            </tr> 
+
+            <tr>
+                <td>2. Class</td>
+                <td>ชื่อของ element โดยสามารถมีได้หลาย element</td>
+            </tr>
+
+            <tr>
+                <td>3. Pseudo Element</td>
+                <td>การกำหนดเฉพาะบางส่วนของ element</td>
+            </tr>
+
+            <tr>
+                <td>4. Pseudo Class</td>
+                <td>การกำหนดเฉพาะบางสถานะของ class</td>
+            </tr>
+
+            <tr>
+                <td>5. Combinators</td>
+                <td>การกำหนดเงื่อนระหว่าง 2 selector</td>
+            </tr>
+
+            <tr>
+                <td>6. Attribute Selector</td>
+                <td>การกำหนดการเลือกชื่อ attribute ใน element </td>
+            </tr>
+
+            <tr>
+                <td rowspan="4"><h3><strong>Combinators</strong></h3></td>
+                <td>1. Descendent Selector (space)</td>
+                <td>a b = tag b ทั้งหมดที่อยู่ใน a</td>
+            </tr>
+
+            <tr>
+                <td>2. Child Selector (&gt;)</td>
+                <td>a > b = tag b ที่เป็นลูกของ a</td>
+            </tr>
+
+            <tr>
+                <td>3. Adjacent Sibling Selector (+)</td>
+                <td>a + b = tag b ที่อยู่ล่าง a และติดกับ a เท่านั้น</td>
+            </tr>
+
+            <tr>
+                <td>4. General Sibling Selector (~)</td>
+                <td>a ~ b = tag b ที่อยู่ล่าง a ทุก tag</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

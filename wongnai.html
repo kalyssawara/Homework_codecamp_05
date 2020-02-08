@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wongnai</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f2f4f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Heading */
+        .container {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+        }
+
+        .container-head {
+            width: 970px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .wongnai {
+            color: #0070a8;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .heading-grid {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            margin-top: 30px;
+        }
+
+        .heading-item:nth-child(1) .fa {
+            color: #fecf11;
+            font-size: 36px;
+        }
+
+        .heading-item:nth-child(1) h3 {
+            color: #232729;
+            font-size: 36px;
+        }
+
+        .heading-item:nth-child(2) h3 {
+            color: #76797a;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        .heading-item:nth-child(2) .fa {
+            font-size: 18px;
+            padding: 3px;
+            cursor: pointer;
+        }
+
+        .heading-item:nth-child(3) a {
+            color: #454545;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 150px 100px 100px 100px 100px 100px;
+            margin: 20px auto;
+        }
+
+        .nav-item p {
+            color: #76797a;
+        }
+
+        .nav-item a {
+            color: #454545;
+            text-decoration: none;
+        }
+
+        /* Content */
+        .container2 {
+            width: 970px;
+            height: auto;
+            background-color: #fff;
+            margin: 30px auto;
+        }
+
+        h6 {
+            font-size: 12px;
+            color: #454545;
+        }
+
+        .home {
+            font-size: 12px;
+            color: #76797a;
+            text-decoration: none;
+        }
+
+        .content-head-grid {
+            display: grid;
+            grid-template-columns: 800px 1fr;
+            margin: 30px 0;
+        }
+
+        .content-head-item {
+            color: #232729;
+        }
+
+        .content-head-link a {
+            color: #0070a8;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 8px;
+        }
+
+        .content-item ul li {
+            list-style-type: none;
+            margin: 10px;
+            color: #232729;
+        }
+
+        .content-item h3 {
+            color: #232729;
+        }
+
+        .container3 {
+            width: 970px;
+            height: auto;
+            background-color: #fff;
+            margin: 30px auto;
+        }
+
+        img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div class="container-head">
+
+                <a class="wongnai" href="#">wongnai</a>
+
+                <div class="heading-grid">
+                    <div class="heading-item">
+                        <h3><i class="fa fa-commenting-o" aria-hidden="true"></i> cooking</h3>
+                    </div>
+
+                    <div class="heading-item">
+                        <form>
+                            <h3>ค้นหา <input type="search" placeholder="ชื่อเมนู, ส่วนผสม, สัญชาติ​, ...">
+                                <button type="submit">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </h3>
+                        </form>
+                    </div>
+
+                    <div class="heading-item">
+                        <a href="#">เข้าสู่ระบบ</a>
+                    </div>
+
+                    <div class="heading item">
+                        <button><span>
+                                <p>+ เขียนสูตรอาหาร</p>
+                            </span></button>
+                    </div>
+                </div>
+
+                <div class="nav-grid">
+                    <div class="nav-item">
+                        <p>คำค้นหายอดนิยม</p>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="#">lorem</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="#">lorem</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="#">lorem</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="#">lorem</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="#">lorem</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+
+        <section>
+            <div class="container2">
+                <h6><a class="home" href="#">หน้าแรก</a> > ทำอาหาร</h6>
+
+                <div class="content-head-grid">
+                    <div class="content-head-item">
+                        <h3 class="content-head">Lorem ipsum dolor sit amet.</h3>
+                    </div>
+
+                    <div class="content-head-link">
+                        <h3 class="content-link"><a href="#">Lorem. >></a></h3>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-item">
+                        <h3 class="content"><i class="fa fa-cutlery" aria-hidden="true"></i> Lorem, ipsum.</h3><hr>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container3">
+                <h2>สูตรอาหารที่น่าสนใจ</h2>
+                <img src="https://via.placeholder.com/952x476">
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
