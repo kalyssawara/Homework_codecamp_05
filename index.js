@@ -236,4 +236,11 @@ switch (a) {
         break;
 }
  
-
+// แบบฝึกหัดพิเศษ
+function draw(n) {
+    let str = ""
+    for (i = 0; i < n; i++)
+    str =+ "*"
+    }
+    console.log(str);
+draw(3);

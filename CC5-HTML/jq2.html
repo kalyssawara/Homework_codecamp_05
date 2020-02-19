@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery 2</title>
+
+    <!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#in1").keydown(function(event){
+   $("#d1").html("Key: " + event.which);
+   if (event.which == 13) {
+       var text = $ ("#in1") .val();
+       $("#d1").text (text);
+       $("#in1").val("");
+   };
+ });
+});
+</script>
+</head>
+<body>
+ Enter : <input id="in1" type="text">
+<div id="d1">D1</div>
+
+</body>
+</html>
+
+
+
+    

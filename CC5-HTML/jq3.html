@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery 3</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin: 15px;
+            padding: 5px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 16px;
+            background-color: pink;
+            width: 300px;
+            height: 100px;
+            margin: 15px;
+            padding: 5px;
+            position: absolute;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1").animate({
+                    left: '250px',
+                    opacity: '0.7',
+                });
+                $("h1").animate({
+                    fontSize: '60px',
+                });
+                
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Start Animation</button>
+
+    <h1>KALYSSA</h1>
+</body>
+
+</html>
