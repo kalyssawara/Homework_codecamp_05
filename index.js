@@ -334,20 +334,31 @@
 //     alert(`${name2} ${bmi2}`)
 // }
 
-// let firstName = prompt('ชื่อคนแรก');
-// let firstHeight = +prompt('ส่วนสูงของคนแรก');
-// let firstWeight = +prompt('น้ำหนักของคนที่สอง');
+let firstName = prompt('ชื่อคนแรก');
+let firstHeight = +prompt('ส่วนสูงของคนแรก');
+let firstWeight = +prompt('น้ำหนักของคนที่สอง');
 
-// let secondName = prompt('ชื่อคนที่สอง');
-// let secondHeight = +prompt('ส่วนสูงของคนที่สอง');
-// let secondWeight = +prompt('น้ำหนักของคนที่สอง');
+let secondName = prompt('ชื่อคนที่สอง');
+let secondHeight = +prompt('ส่วนสูงของคนที่สอง');
+let secondWeight = +prompt('น้ำหนักของคนที่สอง');
 
-// let firstBMI = calculateBMI(firstHeight, firstWeight);
-// let secondBMI = calculateBMI(secondHeight, secondWeight);
+let firstBMI = calculateBMI(firstHeight, firstWeight);
+let secondBMI = calculateBMI(secondHeight, secondWeight);
 
-// if (firstBMI > secondBMI) {
-//     printName
-// }
+if (firstBMI > secondBMI) {
+    printName(firstName, firstBMI);
+} else {
+    printName(secondName, secondBMI);
+}
+
+function printName(name, BMI) {
+    alert(`Name: ${name}\nBMI: $(BMI)`);
+}
+
+function calculateBMI(height, weight) {
+    height /= 100;
+    return height / (height **2)
+}
 
 // รับตัวเลข
 let highNumber = 0;
