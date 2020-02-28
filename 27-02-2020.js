@@ -117,3 +117,4 @@ let array2 = array1.map(function(item) {
     <td>${date[1]} ${date[0]} ${date[2]}</td>
   </tr>
 })
+console.log(array2);
