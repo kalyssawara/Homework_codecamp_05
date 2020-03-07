@@ -106,3 +106,4 @@ array1 = [
 array2 = array1.filter(function (item) {
     return item
 })
+console.log(array2);
